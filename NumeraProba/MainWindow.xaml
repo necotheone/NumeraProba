@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="Numeración de pruebas" Height="350" Width="525">
     <Grid>
-        
+        <Frame x:Name="Browser"/>
+        <Expander ExpandDirection="Left" IsExpanded="{Binding Path=IsSearchExpanded}" HorizontalAlignment="Right" Background="Gainsboro">
+            <Expander.Header>
+                <TextBlock Text="Búsqueda">
+                    <TextBlock.LayoutTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.LayoutTransform>
+                </TextBlock>
+            </Expander.Header>
+            <!--<comp:Search DataContext="{Binding Path=Search}"/>-->
+        </Expander>
     </Grid>
 </Window>
