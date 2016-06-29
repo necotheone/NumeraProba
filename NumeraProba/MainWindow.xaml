@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NumeraProba"
         mc:Ignorable="d"
+        xmlns:comp="clr-namespace:NumeraProba.Components"
         Title="Numeración de pruebas" Height="350" Width="525">
     <Grid>
         <Frame x:Name="Browser"/>
-        <Expander ExpandDirection="Left" IsExpanded="{Binding Path=IsSearchExpanded}" HorizontalAlignment="Right" Background="Gainsboro">
+        <Expander ExpandDirection="Left" IsExpanded="{Binding Path=IsSearchExpanded}" HorizontalAlignment="Right" Background="AliceBlue">
             <Expander.Header>
                 <TextBlock Text="Búsqueda">
                     <TextBlock.LayoutTransform>
@@ -21,7 +22,7 @@
                     </TextBlock.LayoutTransform>
                 </TextBlock>
             </Expander.Header>
-            <!--<comp:Search DataContext="{Binding Path=Search}"/>-->
+            <comp:Search DataContext="{Binding Path=Search}"/>
         </Expander>
     </Grid>
 </Window>
